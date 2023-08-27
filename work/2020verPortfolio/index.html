@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Serif+TC:wght@200;400&display=swap" rel="stylesheet">
+    <!--JQuery's CSS-->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <!--my CSS-->
+    <link rel="stylesheet" href="css/myflexslider.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Daisy's Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul>
+                <li><a class="other-click" href="#other" id="top_other">Other</a></li>
+                <li><a class="portfolio-click" href="#portfolio" id="top_portfolio">Portfolio</a></li>
+                <li><a class="about-click" href="#about" id="top_about">About</a></li>
+                <li><a class="home-click" href="#home">Home</a></li>
+            </ul>
+        </div>
+        <!--------------------home-------------------->
+        <div class="content_home" id="home">
+            <br>
+            <p>Daisy</p>
+            <hr class="home">
+            <a class="about-click" href="#about">Find Out More</a>
+            <div class="bottom"></div>
+            <div class="bottom"></div>
+        </div>
+        <!--------------------about-------------------->
+        <div class="content_about">
+            <br>
+            <p class="about" id="about">About.</p>
+            <div class="clear"></div><!---clear區塊--->
+            <hr class="about">
+            <div class="personalinfo">
+                <p>姓名：林紫涵／Dasiy</p>
+                <p>學歷：國立台北商業大學　資訊管理系三年級</p>
+                <p>信箱：10646028@ntub.edu.tw</p>
+            </div>
+            <div class="clear"></div><!---clear區塊--->
+            <!--------------------expertise專長-------------------->
+            <div class="flexslider-expertise">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="expertise" id="expertise">
+                                <i class="fas fa-6x fa-file-code text-primary mb-4" id="icon"></i>
+                                <p class="expertise_header">HTML / CSS</p>
+                                <p class="expertise_context"> 前端網頁設計與製作</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="expertise">
+                                <i class="fas fa-6x fa-user-circle text-primary mb-4" id="icon"></i>
+                                <p class="expertise_header">UI / UX</p>
+                                <p class="expertise_context">基於使用者需求規劃與設計流程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="expertise" id="expertise">
+                                <i class="fas fa-6x fa-chart-line text-primary mb-4" id="icon"></i>
+                                <p class="expertise_header">網路行銷</p>
+                                <p class="expertise_context">自行經營蝦皮網拍，對網路行銷較熟悉</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="expertise">
+                                <i class="fas fa-6x fa-edit text-primary mb-4" id="icon"></i>
+                                <p class="expertise_header">文案撰寫</p>
+                                <p class="expertise_context">長期撰寫文章，對文字具有敏銳度</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div><!---clear區塊--->
+            <!--------------------license證照-------------------->
+            <div class="flexslider-license">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="license">
+                                <p>Google Analytice 個人認證</p>
+                                <p>Google 數位行銷資格認證</p>
+                                <p>TQC DreamWeaver</p>
+                                <p>TQC Word</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="license">
+                                <p>乙級電腦軟體應用技術士</p>
+                                <p>丙級電腦硬體裝修技術士</p>
+                                <p>TQC-OA-中文輸入99</p>
+                                <p>TQC-OA-英文輸入30</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="license">
+                                <br>
+                                <p>丙級會計事務－人工記帳</p>
+                                <p>丙級會計事務－資訊</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom"></div>
+            <div class="clear"></div><!---clear區塊--->
+        </div>
+        <!--------------------portfolio-------------------->
+        <div class="content_portfolio">
+            <br>
+            <p class="portfolio" id="portfolio">Portfolio.</p>
+            <div class="clear"></div><!---clear區塊--->
+            <hr class="portfolio">
+            <!-------------------篩選--------------------->
+            <div class="portfolio_text"></div>
+                <ul class="tabs">
+                    <li><a href="#tab1">所有作品</a></li>  
+                    <li><a href="#tab4">UI / UX</a></li>  
+                    <li><a href="#tab6">網頁設計</a></li>  
+                </ul>
+                <div class="clear"></div><!---clear區塊---><!---clear區塊--->
+            <!-------------------內文-全部--------------------->
+            <div class="tab_container">  
+                <div id="tab1" class="tab_content" style="display: block; ">
+                    <div class="portfolio_img">
+                        <a href="https://xd.adobe.com/view/c3b49788-9825-4ac5-663f-fd5902a54e2e-b585/" target="_blank">
+                            <img src="images/portfolio/uiux-sukiyaki.png">
+                            <p>Sukiyaki-一頁式網頁設計練習</p>
+                        </a>
+                    </div>
+                    <div class="portfolio_img">
+                        <a href="https://04h5pzjcbbq83lse8ol0qg-on.drv.tw/rwd/" target="_blank">
+                            <img src="images/portfolio/web-travelpack-telegram.png">
+                            <p>TravelPack-專題網頁頁面實作</p>
+                        </a>
+                    </div>
+                    <div class="portfolio_img">
+                        <a href="https://xd.adobe.com/view/22264395-8479-4938-a1d3-49c3440cb106-7775/" target="_blank">
+                            <img src="images/portfolio/uiux-telegram.png">
+                            <p>Telegram-介面模擬與設計</p>
+                        </a>
+                    </div>
+                    <div class="portfolio_img">
+                            <a href="https://escrituraforu.blogspot.com/" target="_blank">
+                                <img src="images/portfolio/uiux-blog.png">
+                                <p>非‧凡以知文-個人網站設計</p>
+                            </a>
+                    </div>
+                    <div class="portfolio_img">
+                        <a href="https://10646028.github.io/Portfolio/Daisy%20portfolio/index.html" target="_blank">
+                            <img src="images/portfolio/web-daisy.png">
+                            <p>Daisy-個人作品集網頁頁面實作</p>
+                        </a>
+                    </div>
+                    <div class="portfolio_img">
+                        <img src="images/portfolio/uiux-travelpack-image_web.png">
+                        <p>TravelPack-專題形象網站設計</p>
+                    </div>
+                    <div class="portfolio_img">
+                        <a href="https://tifo6w9vrrmgrxmuhqcgga-on.drv.tw/%E4%BD%9C%E5%93%81%E9%9B%86/test/#" target="_blank">
+                            <img src="images/portfolio/web-boot.png">
+                            <p>非‧凡以知文-形象頁面套版實作</p>
+                        </a>
+                    </div>
+                    <div class="portfolio_img">
+                        <a href="https://xd.adobe.com/view/c674033c-9462-4dec-b6c9-ab2c89179d82-9327/" target="_blank">
+                            <img src="images/portfolio/uiux-daisy.png">
+                            <p>Daisy-個人作品集界面設計練習</p>
+                        </a>
+                    </div>
+                    <div class="portfolio_img">
+                            <a href="https://tifo6w9vrrmgrxmuhqcgga-on.drv.tw/%E4%BD%9C%E5%93%81%E9%9B%86/Web/%E8%AA%B2%E5%A0%82%E7%B7%B4%E7%BF%92/newsbar%E5%BD%88%E8%B7%B3/" target="_blank">
+                                <img src="images/portfolio/web-class-1.png">
+                                <p>自選網頁實作（課堂的實作練習）</p>
+                            </a>
+                    </div>
+                    <div class="portfolio_img">
+                        <img src="images/portfolio/web-class-2.png">
+                        <p>自選網頁實作（課堂的實作練習）</p>
+                    </div>
+                </div>  
+                <!-------------------內文-UIUX--------------------->
+                <div id="tab4" class="tab_content" style="display: none; ">  
+                    <div class="portfolio_img">
+                        <a href="https://escrituraforu.blogspot.com/" target="_blank">
+                            <img src="images/portfolio/uiux-blog.png">
+                            <p>非‧凡以知文-個人網站設計</p>
+                        </a>
+                    </div>
+                    <div class="portfolio_img">
+                        <a href="https://xd.adobe.com/view/22264395-8479-4938-a1d3-49c3440cb106-7775/" target="_blank">
+                            <img src="images/portfolio/uiux-telegram.png">
+                            <p>Telegram-介面模擬與設計</p>
+                        </a>
+                    </div>
+                    <div class="portfolio_img">
+                        <a href="https://xd.adobe.com/view/c3b49788-9825-4ac5-663f-fd5902a54e2e-b585/" target="_blank">
+                            <img src="images/portfolio/uiux-sukiyaki.png">
+                            <p>Sukiyaki-一頁式網頁設計練習</p>
+                        </a>
+                    </div>
+                    <div class="portfolio_img">
+                        <img src="images/portfolio/uiux-travelpack-image_web.png">
+                        <p>TravelPack-專題形象網站設計</p>
+                    </div>
+                    <div class="portfolio_img">
+                            <a href="https://xd.adobe.com/view/c674033c-9462-4dec-b6c9-ab2c89179d82-9327/" target="_blank">
+                                <img src="images/portfolio/uiux-daisy.png">
+                                <p>Daisy-個人作品集界面設計練習</p>
+                            </a>
+                    </div>
+                </div>  
+                <!-------------------內文-網頁--------------------->
+                <div id="tab6" class="tab_content" style="display: none; ">  
+                    <div class="portfolio_img">
+                            <a href="https://04h5pzjcbbq83lse8ol0qg-on.drv.tw/rwd/" target="_blank">
+                                <img src="images/portfolio/web-travelpack-telegram.png">
+                                <p>TravelPack-專題網頁頁面實作</p>
+                            </a>
+                    </div>
+                    <div class="portfolio_img">
+                        <a href="https://10646028.github.io/Portfolio/Daisy%20portfolio/index.html" target="_blank">
+                            <img src="images/portfolio/web-daisy.png">
+                            <p>Daisy-個人作品集網頁頁面實作</p>
+                        </a>
+                    </div>
+                    <div class="portfolio_img">
+                        <a href="https://tifo6w9vrrmgrxmuhqcgga-on.drv.tw/%E4%BD%9C%E5%93%81%E9%9B%86/test/#" target="_blank">
+                            <img src="images/portfolio/web-boot.png">
+                            <p>非‧凡以知文-形象頁面套版實作</p>
+                        </a>
+                    </div>
+                    <div class="portfolio_img">
+                            <a href="https://tifo6w9vrrmgrxmuhqcgga-on.drv.tw/%E4%BD%9C%E5%93%81%E9%9B%86/Web/%E8%AA%B2%E5%A0%82%E7%B7%B4%E7%BF%92/newsbar%E5%BD%88%E8%B7%B3/" target="_blank">
+                                <img src="images/portfolio/web-class-1.png">
+                                <p>自選網頁實作（課堂的實作練習）</p>
+                            </a>
+                    </div>
+                    <div class="portfolio_img">
+                        <img src="images/portfolio/web-class-2.png">
+                        <p>自選網頁實作（課堂的實作練習）</p>
+                    </div>
+                </div> 
+            </div>  
+            <!---------------------------------------->
+            <div class="clear"></div><!---clear區塊--->
+            <div class="bottom"></div>
+        </div>
+        <!--------------------other-------------------->
+        <div class="content_other">
+            <br>
+            <p class="other" id="other">Other.</p>
+            <div class="clear"></div><!---clear區塊--->
+            <hr class="other">
+            <div class="web">
+                <p class="web">Web</p>
+                <ul>
+                    <li><a href="https://github.com/10646028">Git Hub</a></li>
+                    <li><a href="http://escrituraforu.blogspot.com/">Blog</a></li>
+                </ul>
+                <br>
+            </div>
+            <div class="contact">
+                <p class="contact">Contact</p>
+                <ul>
+                    <li>10646028@ntub.edu.tw</li>
+                </ul>
+            </div>
+            <br>
+            <div class="bottom"></div>
+        </div>
+        <!--------------------footer-------------------->
+        <div class="footer">
+            <p>Copyright © 2020 By Diasy</p>
+        </div>
+    </div>
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+    <script src="js/jQueryRotate.js"></script>  
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/scripts.js"></script> 
+</body>
+</html>

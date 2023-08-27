@@ -1,0 +1,97 @@
+/*==================== rwd ====================*/
+.sp {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
+
+  .contents #top {
+    height: 120vh;
+  }
+  .contents #top::after {
+    width: 1px;
+  }
+
+  @keyframes pathmove {
+    0% {
+      height: 0;
+      top: 85vh;
+      opacity: 0;
+    }
+    30% {
+      height: 80px;
+      opacity: 1;
+    }
+    100% {
+      height: 0;
+      top: 110vh;
+      opacity: 0;
+    }
+  }
+  .contents .SE, .contents .work, .contents .skill, .contents .contact {
+    height: 130vh;
+  }
+  .contents .SE h3, .contents .work h3, .contents .skill h3, .contents .contact h3 {
+    font-size: 2rem;
+  }
+  .contents .SE p, .contents .work p, .contents .skill p, .contents .contact p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  .contents #SE .text {
+    margin: 0 -1rem;
+  }
+  .contents #SE .SEp {
+    font-size: 0.9rem;
+    white-space: nowrap;
+    width: 90vw;
+  }
+  .contents #SE .SEspan {
+    width: 6rem;
+    font-size: 0.6rem;
+  }
+  .contents #work .sp .work-img, .contents #work .sp .work-img-bg {
+    width: 65%;
+  }
+
+  @keyframes pathmove_SE {
+    0% {
+      height: 0;
+      top: 85vh;
+      opacity: 0;
+    }
+    30% {
+      height: 100px;
+      opacity: 1;
+    }
+    100% {
+      height: 0;
+      top: 100vh;
+      opacity: 0;
+    }
+  }
+  footer {
+    font-size: 0.7rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media (max-width: 380px) {
+  #SE .SEp {
+    display: inline-grid;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: 0.5rem 0;
+  }
+  #SE h3 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=rwd.css.map */

@@ -1,0 +1,536 @@
+@font-face {
+    font-family: 'Baskerville-Old-Face-Caps';
+    src: url('../font/Baskerville-Old-Face-Caps-Regular-4.woff') format("woff");
+}
+@font-face {
+    font-family: 'NotoSans-BlackItalic';
+    src: url('../font/NotoSans-BlackItalic.woff') format("woff");
+}
+html, body{
+    margin: 0;
+    font-family: 'Baskerville-Old-Face-Caps', 'Libre Baskerville', 'NotoSans-BlackItalic', serif;
+    color: #0F2C28;
+    text-align: justify;
+    scroll-behavior: smooth;
+}
+div.clear{
+    clear: both;
+}
+div.bottom{
+    height: 3rem;
+}
+/*==================navbar==================*/
+div.header ul{
+    font-size: 3rem;
+    list-style: none;
+    margin-top: -3rem;
+}
+div.header li{
+    float: right;
+    margin: 0 2rem;
+}
+div.header li a, div.header li a:link, div.header li a:visited{
+  color: #E4E4E4;  
+  text-decoration: none;
+}
+a.click{
+    Transition: 0.9s;
+}
+div.header li a:hover{
+    color: #7e7e7e;
+}
+@media screen and (max-width: 1000px){
+    div.header ul{
+        font-size: 2rem;
+    }
+    div.header li{
+        margin: 2rem;
+    }
+}
+@media screen and (max-width: 700px){
+    div.header ul{
+        font-size: 1.5rem;
+    }
+    div.header li{
+        margin: 1.5rem;
+    }
+}
+@media screen and (max-width: 550px){
+    div.header ul{
+        font-size: 1.2rem;
+    }
+    div.header li{
+        margin: 2rem 1rem;
+    }
+}
+@media screen and (max-width: 410px){
+    div.header ul{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 380px){
+    div.header li{
+        margin: 2rem 0.5rem;
+    }
+}
+/*==================home==================*/
+div.content_home{
+    background: url(../images/back_home.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+div.content_home p{
+    font-size: 16rem;
+    margin-left: 10%;
+}
+hr.home{
+    border: 0;
+    height: 0.5rem;
+    width: 38rem;
+    background-image: linear-gradient(to right, #FDA51D, #ca841a, #FDA51D);
+    float: left;
+    margin: -18rem 0 0 10%
+}
+@media screen and (max-width: 1024px){
+    div.content_home p{
+        font-size: 10rem;
+        margin-left: 10%;
+    }
+    hr.home{
+        margin: -12rem 0 0 10% ;
+        width: 23rem;
+    }
+}
+@media screen and (max-width: 500px){
+    div.content_home p{
+        font-size: 6rem;
+        margin-left: 10%;
+    }
+    hr.home{
+        margin: -7rem 0 0 10% ;
+        width: 14rem;
+        height: 0.2rem;
+    }
+}
+div.content_home a{
+    text-decoration: none;
+    background-color: #FDA51D;
+    color: #ffffff;
+    line-height: 3rem;
+    font-size: 2.5rem;
+    border-radius: 3rem;
+    position: relative;
+    left: 40%;
+    padding: 2%;
+}
+div.content_home a:hover{
+    background-color: #c78118;
+}
+@media screen and (max-width: 500px){
+    div.content_home a{
+        line-height: 3rem;
+        font-size: 1.5rem;
+        border-radius: 3rem;
+        position: relative;
+        left: 33%;
+        padding: 2%;
+    }
+}
+
+/*==================about==================*/
+div.content_about{
+    background: url(../images/back_about.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+div.content_about p.about{
+    font-size: 5rem;
+    margin-top: -0.2rem;
+    margin-right: 2.5rem;
+    float: right;
+}
+div.content_about p.about:hover{
+    color: #000000;
+}
+hr.about{
+    border: 0;
+    height: 0.3rem;
+    width: 8.5rem;
+    background-image: linear-gradient(to right, #FDA51D, #ca841a, #FDA51D);
+    float: right;
+    margin: -5rem 5rem 0 0;
+}
+@media screen and (max-width: 450px){
+    div.content_about p.about{
+        float: left;
+        font-size: 3rem;
+        margin: 0 0 0 1rem;
+    }
+    hr.about{
+        float: left;
+        height: 0.2rem;
+        width: 5rem;
+        margin-top: -0.5rem;
+        margin-left: 3.5rem;
+    }
+}
+/*==================about內文字樣設定(姓名學歷信箱區塊)==================*/
+div.personalinfo{
+    font-family: 'Noto Serif TC';
+    margin: 1rem 10% 0 35%;
+    font-size: 2.2rem;
+}
+@media screen and (max-width: 1300px){
+    div.personalinfo{
+        margin: 1rem 5% 0 30%;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 750px){
+    div.personalinfo{
+        margin: 1rem 5% 0 15%;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 600px){
+    div.personalinfo{
+        font-size: 1.2rem;
+        margin-top: 2rem;
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 450px){
+    div.personalinfo{
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+}
+/*==================expertise專長欄位輪播設計==================*/
+div.expertise{
+    font-family: 'Noto Serif TC';
+    margin: 8rem 0 0 10vw;
+}
+#icon {
+    color: #FDA51D;
+}
+div.expertise p.expertise_header{
+    font-size: 2rem;
+}
+div.expertise p.expertise_context{
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 1300px){
+    div.expertise{
+        margin: 8rem 10vw 0 5vw;
+    }
+}
+@media screen and (max-width: 750px){
+    div.expertise{
+        margin: 8rem 4vw 0 4vw;
+    }
+    div.expertise p.expertise_header{
+        font-size: 1.5rem;
+    }
+    div.expertise p.expertise_context{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 450px){
+    div.expertise{
+        margin: 8rem 10vw 0 25vw;
+    }
+}
+
+/*==================license證照欄位輪播設計==================*/
+div.license{
+    font-family: 'Noto Serif TC';
+    font-size: 1.5rem;
+    text-align: left;
+    margin: -0.5rem 0 0 6rem;
+}
+@media screen and (max-width: 1300px){
+    div.license{
+        margin: -0.5rem 0 0 0;
+    }
+}
+@media screen and (max-width: 750px){
+    div.license{
+        font-size: 1rem;
+        margin-top: 6rem;
+    }
+}
+@media screen and (max-width: 450px){
+    div.license{
+        font-size: 1.5rem;
+        margin: 1rem 0 0 3.5rem;
+    }
+    div.license p{
+        font-size: 1rem;
+    }
+}
+/*==================portfolio==================*/
+div.content_portfolio{
+    background: url(../images/back_portfolio.png) center center no-repeat;;
+    background-size: cover;
+    width: 100%;
+}
+div.content_portfolio p.portfolio{
+    font-size: 5rem;
+    float: left;
+    margin: 1rem 0 0 2rem;
+}
+div.content_portfolio p.portfolio:hover{
+    color: #000000;
+}
+hr.portfolio{
+    border: 0;
+    height: 0.3rem;
+    width: 15rem;
+    background-image: linear-gradient(to right, #FDA51D, #ca841a, #FDA51D);
+    float: left;
+    margin: -1rem 0 0 5.8rem;
+}
+@media screen and (max-width: 450px){
+    div.content_portfolio p.portfolio{
+        font-size: 3rem;
+        margin: 0 0 0 10%;
+    }
+    hr.portfolio{
+        height: 0.2rem;
+        width: 9rem;
+        margin-top: -0.5rem;
+        margin-left: 4.5rem;
+    }
+}
+
+div.portfolio_text{
+    font-family: 'Noto Serif TC';
+    font-size: 1.5rem;
+}
+/*=========tab的標籤列(所有作品 UIUX 網頁設計)=========*/
+ul.tabs{
+    list-style:none;
+    margin: 2rem 0 0 16.5vw;
+    font-size: 2rem;
+}
+ul.tabs li{
+    float: left;
+    width: 25vw;
+}
+ul.tabs a{
+    font-family: 'Noto Serif TC';
+    text-decoration:none;
+    color: #0F2C28;
+}
+ul.tabs a.active{
+    color: #FDA51D;
+}
+ul.tabs a:hover{
+    color: #FDA51D;
+}
+/*=========內文區塊(作品img&p)=========*/
+div.portfolio_img{
+    font-family: 'Noto Serif TC';
+    background-color: #ffffff;
+    margin: 2rem 1.5% 0 2rem;
+    float: left;
+    width: 28vw;
+    display: inline-block;
+    position: relative;
+}
+div.portfolio_img img{
+    margin: 0;
+    width: 28vw;
+    height: 16.05vw;
+    border-style:solid;
+    border-color: #ffffff;
+    border-width: 0.1rem;
+    box-sizing: border-box;
+}
+div.portfolio_img p{
+    text-align: center;
+    font-size: 1rem;
+}
+div.tab_container a{
+    color: #000000;
+    text-decoration: none;
+}
+div.tab_container a:hover{
+    color: #c78118;
+}
+div.tab_container a.active{
+    color: #000000;
+    text-decoration: none;
+}
+@media screen and (max-width: 1000px){
+    div.portfolio_img{
+        margin: 2rem 0rem 0 9rem;
+    }
+}
+@media screen and (max-width: 850px){
+    div.portfolio_img{
+        margin: 2rem -2.5rem 0 8.2rem;
+    }
+    ul.tabs{
+        margin: 1.5rem 0 0 6rem;
+    }
+}
+@media screen and (max-width: 700px){
+    div.portfolio_img{
+        margin: 2rem 2rem 0 6rem;
+    }
+    ul.tabs{
+        margin: 1.5rem 0 0 5rem;
+    }
+}
+@media screen and (max-width: 600px){
+    div.portfolio_img{
+        margin: 2rem 1.5rem 0 5rem;
+    }
+    ul.tabs{
+        font-size: 1.5rem;
+        margin: 1.5rem 0 0 3.5rem;
+    }
+}
+@media screen and (max-width: 510px){
+    div.portfolio_img{
+        margin: 2rem -1.5rem 0 5rem;
+        height: 9rem;
+    }
+    div.portfolio_img p{
+        font-size: 0.8rem;
+    }
+    ul.tabs{
+        margin: 1.5rem 0 0 3rem;
+        font-size: 1rem;
+    }
+    ul.tabs li{
+        width: 25vw;
+    }
+}
+@media screen and (max-width: 375px){
+    div.portfolio_img{
+        height: 9rem;
+        margin: 2rem 1rem 0 3rem;
+    }
+    ul.tabs{
+        margin: 1.5rem 0 0 1rem;
+    }
+}
+/*==================other==================*/
+div.content_other{
+    background: url(../images/back_other.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    font-size: 2rem;
+}
+div.content_other p.other{
+    font-size: 5rem;
+    float: left;
+    margin: 1rem 0 0 45%;
+}
+div.content_other p.other:hover{
+    color: #000000;
+}
+hr.other{
+    border: 0;
+    height: 0.3rem;
+    width: 15rem;
+    background-image: linear-gradient(to right, #FDA51D, #ca841a, #FDA51D);
+    float: left;
+    margin: -1rem 0 0 45%;
+}
+
+div.web{
+    margin: 5% 0 0 50%;
+}
+div.content_other ul{
+    margin-left: 2rem;
+}
+div.web ul li a, div.web ul li a.header, div.web ul li a.header:link, div.web ul li a.header:visited{
+    text-decoration: none;
+    color: #0F2C28;;
+}
+div.web ul li a:hover{
+    color: #FDA51D;
+}
+p.web, p.contact{
+    font-size: 3rem;
+    margin-left: 0;
+}
+div.contact{
+    margin: 3rem 0 10% 60%;
+}
+@media screen and (max-width: 1000px){
+    div.content_other p.other{
+        float: left;
+        margin: 1rem 0 0 35%;
+    }
+    hr.other{
+        margin: -1rem 0 0 35%;
+    }
+    div.web{
+        margin: 5% 0 0 35%;
+    }
+    div.contact{
+        margin: 3rem 0 10% 40%;
+    }
+}
+@media screen and (max-width: 650px){
+    p.web, p.contact{
+        font-size: 2rem;
+    }
+    div.web ul, div.contact ul{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 500px){
+    div.content_other p.other{
+        font-size: 3rem;
+        margin: 0 0 0 25%;
+    }
+    hr.other{
+        height: 0.2rem;
+        width: 9rem;
+        margin-top: -0.5rem;
+        margin-left: 25%;
+    }
+}
+@media screen and (max-width: 450px){
+    div.web{
+        margin: 5% 0 0 20%;
+    }
+    div.contact{
+        margin: 3rem 0 10% 20%;
+    }
+    div.web ul, div.contact ul{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 400px){
+    div.web{
+        font-size: 1.5rem;
+    }
+    div.contact{
+        font-size: 1.5rem;
+    }
+    div.web ul, div.contact ul{
+        font-size: 1rem;
+    }
+}
+/*==================footer==================*/
+div.footer{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+}
+@media screen and (max-width: 450px){
+    div.footer{
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+}

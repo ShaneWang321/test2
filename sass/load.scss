@@ -1,0 +1,114 @@
+/*========== Load ==========*/
+#load {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 888;
+
+  .bg1 {
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/background/pexels-kristina-paukshtite-1591252-1.jpg")
+      no-repeat center bottom;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  // Daisy's Portfolio Loading
+  p{
+    animation: textMove 3s; /*IE*/
+    -moz-animation: textMove 3s; /*FireFox*/
+    -webkit-animation: textMove 3s; /*Chrome, Safari*/
+  }
+}
+
+#load P, .topText{
+  top: 35%;
+  left: 30%;
+  position: absolute;
+  font-size: 3rem;
+}
+.topText{
+  z-index: 10;
+}
+
+/*========== Animation ==========*/
+@keyframes textMove {
+  0% {
+    left: -20%;
+    color: #000;
+  }
+  100% {
+    left: 30%;
+    color: #fff;
+  }
+}
+@-moz-keyframes textMove {
+  0% {
+    left: -20%;
+    color: #000;
+  }
+  100% {
+    left: 30%;
+    color: #fff;
+  }
+}
+@-webkit-keyframes textMove {
+  0% {
+    left: -20%;
+    color: #000;
+  }
+  100% {
+    left: 30%;
+    color: #fff;
+  }
+}
+
+/*==================== rwd ====================*/
+@media(max-width:768px){
+  #load p, .topText{
+      font-size: 3rem;
+      top: 30%;
+      left: 15%;
+    }
+
+
+  /*========== Animation ==========*/
+  @keyframes textMove {
+    0% {
+      left: -20%;
+      color: #000;
+    }
+    100% {
+      left: 15%;
+      color: #fff;
+    }
+  }
+  @-moz-keyframes textMove {
+    0% {
+      left: -20%;
+      color: #000;
+    }
+    100% {
+      left: 15%;
+      color: #fff;
+    }
+  }
+  @-webkit-keyframes textMove {
+    0% {
+      left: -20%;
+      color: #000;
+    }
+    100% {
+      left: 15%;
+      color: #fff;
+    }
+  }
+}
+
+

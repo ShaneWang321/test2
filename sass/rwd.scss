@@ -1,0 +1,116 @@
+/*==================== rwd ====================*/
+.sp{
+  display: none;
+}
+@media(max-width:768px){
+  .pc{
+    display: none;
+  }
+  .sp{
+    display: block;
+  }
+
+  // navbar
+  .contents{
+    #top{
+      height: 120vh;
+    }
+    #top::after{
+      width: 1px;
+    }
+  }
+  // 直線動畫
+  @keyframes pathmove {
+    0% {
+        height: 0;
+        top: 85vh;
+        opacity: 0;
+    }
+    30% {
+        height: 80px;
+        opacity: 1;
+    }
+    100% {
+        height: 0;
+        top: 110vh;
+        opacity: 0;
+    }
+  }
+
+  // context
+  .contents{
+
+    .SE, .work, .skill, .contact{
+      height: 130vh;
+  
+      h3{
+        font-size: 2rem;
+      }
+      p{
+        font-size: 1rem;
+        line-height: 1.2rem;
+      }
+  
+    }
+
+    #SE{
+      .text{
+        margin: 0 -1rem;
+      }
+      .SEp{
+        font-size: 0.9rem;
+        white-space: nowrap;
+        width: 90vw;
+      }
+      .SEspan{
+        width: 6rem;
+        font-size: 0.6rem;
+        
+      }
+    }
+
+    #work{
+      .sp{
+        .work-img, .work-img-bg{
+          width: 65%;
+        }
+      }
+    }
+  }
+    
+  @keyframes pathmove_SE {
+    0% {
+        height: 0;
+        top: 85vh;
+        opacity: 0;
+    }
+    30% {
+        height: 100px;
+        opacity: 1;
+    }
+    100% {
+        height: 0;
+        top: 100vh;
+        opacity: 0;
+    }
+  }
+
+  footer{
+    font-size: 0.7rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media(max-width:380px){
+  #SE{
+    .SEp{
+      display: inline-grid;
+      font-size: 1rem;
+      line-height: 1.7rem;
+      margin: 0.5rem 0;
+    }
+    h3{
+      margin-bottom: 1.5rem;
+    }
+  } 
+}

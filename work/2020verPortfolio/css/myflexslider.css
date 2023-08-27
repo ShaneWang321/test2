@@ -1,0 +1,46 @@
+/*共用設定*/
+.flexslider{
+    background-color: transparent;
+    border: transparent;
+    float: left;
+}
+.flex-control-paging li a {
+    background: #666;
+    background: #0F2C28;
+}
+.flex-control-paging li a.flex-active {
+    background: #000;
+    background: #FDA51D;
+}
+/*隱藏無法顯示的箭頭*/
+.flex-direction-nav a {
+    display: none; 
+}
+/*flexslider-expertise專長欄位*/
+div.flexslider-expertise div.flexslider{
+    width: 50%;
+    margin-left: 4rem;
+    margin-bottom: 10rem;
+}
+@media screen and (max-width: 450px){
+    div.flexslider-expertise div.flexslider{
+        width: 80%;
+        margin-left: 2.7rem;
+    }
+}
+/*flexslider-license證照欄位*/
+div.flexslider-license div.flexslider{
+    position: absolute;
+    left: 60%;
+    width: 35%;
+    margin-top: -26rem;
+    margin-bottom: 10rem;
+}
+@media screen and (max-width: 450px){
+    div.flexslider-license div.flexslider{
+        position: relative;
+        left: 2rem;
+        width: 80%;
+        margin: 0 2rem 5rem 1rem;
+    }
+}
